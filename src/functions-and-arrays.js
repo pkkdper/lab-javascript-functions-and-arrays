@@ -92,17 +92,7 @@ function averageWordLength(wordsArr) {
     for (let i of wordsArr) {
       let wordLength = i.length;
       sum += wordLength;
-      console.log(wordLength, sum)
     }
-    
-    // for(let i = 0; i < wordsArr.length; i++) {
-    //   let sum = 0;
-    //   let wordLength = i.length;
-    //   sum += wordLength;
-    //   console.log(wordLength, sum)
-    // }
-
-
     return sum / wordsArr.length;
   } else {
     return null;
@@ -127,7 +117,13 @@ const wordsUnique = [
   "bring",
 ];
 
-function uniquifyArray() {}
+function uniquifyArray() {
+  for(let i = 0; i < wordsUnique.length; i +=1) {
+    let el = wordsUnique[i];
+    console.log(wordsUnique.indexOf(el))
+    
+  }
+}
 
 // Iteration #6: Find elements
 const wordsFind = [
