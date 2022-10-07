@@ -116,14 +116,21 @@ const wordsUnique = [
   "simple",
   "bring",
 ];
-
-function uniquifyArray() {
-  for(let i = 0; i < wordsUnique.length; i +=1) {
-    let el = wordsUnique[i];
-    console.log(wordsUnique.indexOf(el))
-    
-  }
+ let uniqueWord = [];
+function uniquifyArray(wordsUnique) {
+  if (wordsUnique.length !== 0){
+    wordsUnique.forEach((el) => {if (!uniqueWord.includes(el)) {
+      console.log(uniqueWord);
+      uniqueWord.push(el);
+    }});
+  // for(let i = 0; i < wordsUnique.length; i +=1) {
+  //   let el = wordsUnique[i];
+  //   console.log(wordsUnique.indexOf(el))
+  // }
 }
+else {
+  return null;
+}}
 
 // Iteration #6: Find elements
 const wordsFind = [
