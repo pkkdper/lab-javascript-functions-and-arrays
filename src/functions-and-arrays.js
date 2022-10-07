@@ -122,7 +122,8 @@ function uniquifyArray(wordsUnique) {
     wordsUnique.forEach((el) => {if (!uniqueWord.includes(el)) {
       console.log(uniqueWord);
       uniqueWord.push(el);
-    }});
+    } return uniqueWord;
+  });
   // for(let i = 0; i < wordsUnique.length; i +=1) {
   //   let el = wordsUnique[i];
   //   console.log(wordsUnique.indexOf(el))
@@ -144,7 +145,17 @@ const wordsFind = [
   "disobedience",
 ];
 
-function doesWordExist() {}
+function doesWordExist(wordsFind, word) {
+  if (wordsFind.length !== 0) {
+if (wordsFind.includes(word)) {
+return true;
+}
+else {
+  return false;
+}
+  }
+  else {return null;}
+}
 
 // Iteration #7: Count repetition
 const wordsCount = [
